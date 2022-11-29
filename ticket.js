@@ -57,8 +57,8 @@ function hitung() {
 
   document.querySelector('input[name="harga"]').value = opsi_wisata;
   document.querySelector('input[name="total"]').value = total_harga_tiket;
-  total.innerHTML = formatRupiah(total_harga_tiket, 'Rp. ')
-  harga.innerHTML = formatRupiah(opsi_wisata, 'Rp. ')
+  total.innerHTML = formatRupiah(total_harga_tiket, 'Rp ')
+  harga.innerHTML = formatRupiah(opsi_wisata, 'Rp ')
 }
 
 // fungsi untuk menghitung potongan harga tiket anak-anak
@@ -81,11 +81,11 @@ function formatRupiah(angka, prefix){
 
   // tambahkan titik jika yang di input sudah menjadi angka ribuan
   if(ribuan){
-    separator = sisa ? '.' : '';
-    rupiah += separator + ribuan.join('.');
+    separator = sisa ? ',' : '';
+    rupiah += separator + ribuan.join(',');
   }
 
   rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
-  return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+  return prefix == undefined ? rupiah : (rupiah ? 'Rp ' + rupiah : '');
 }
     

@@ -10,6 +10,9 @@
   <!-- installation Tailwind with CDN -->
   <script src="https://cdn.tailwindcss.com"></script> 
 
+  <!-- JS External -->
+  <script src="ticket.js"></script>
+
   <title>Konfirmasi Pesanan</title>
 </head>
 
@@ -70,13 +73,19 @@
         <td class="border py-2 bg-violet-200 w-96">Pengunjung Anak-anak</td>
         <td class="border w-80"><?= $data['pengunjung_anak'] ?></td>
       </tr>
+      <?php
+      $harga = $data['harga_tiket'];
+      $hasil_rupiah = "Rp " . number_format($harga);?>
       <tr>
         <td class="border py-2 bg-violet-200 w-96">Harga Tiket</td>
-        <td class="border w-80"><?= $data['harga_tiket'] ?></td>
+        <td class="border w-80" id="harga"><span id="harga"><?= $hasil_rupiah ?></td>
       </tr>
+      <?php
+      $total = $data['total_bayar'];
+      $hasil_rupiah = "Rp " . number_format($total);?>
       <tr>
         <td class="border py-2 bg-violet-800 w-96 text-white">Total Bayar</td>
-        <td class="border py-2 bg-violet-800 w-80 text-white"><?= $data['total_bayar'] ?></td>
+        <td class="border py-2 bg-violet-800 w-80 text-white" id="total"><?= $hasil_rupiah ?></td>
       </tr>
     </table>
   </div>

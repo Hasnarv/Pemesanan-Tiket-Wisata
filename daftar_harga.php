@@ -46,10 +46,12 @@
             </thead>
             <tbody>
                 <!-- Looping data daftar harga -->
-                <?php for ($i = 0; $i < 3; $i++) { ?>
+                <?php for ($i = 0; $i < 3; $i++) { 
+                    $angka = get_tempat_wisata()[$i]['harga'];
+                    $hasil_rupiah = "Rp " . number_format($angka);?>
                     <tr>
                         <td class="border text-center"><?= get_tempat_wisata()[$i]['tempat_wisata'] ?></td>
-                        <td class="border text-center"><?= get_tempat_wisata()[$i]['harga'] ?></td>
+                        <td class="border text-center"><?= $hasil_rupiah ?></td>
                     </tr>
                 <?php } ?>
             </tbody>
