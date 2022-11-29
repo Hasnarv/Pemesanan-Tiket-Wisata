@@ -2,7 +2,7 @@
 var pantai = 15000
 var museum = 10000
 var taman_nasional = 5000
-var opsi_wisata = '' //pilihan kelas penumpang
+var opsi_wisata = '' //pilihan tempat wisata
 var total_anak = 0
 var total_harga_anak = 0
 var tiket_normal = 0
@@ -29,7 +29,7 @@ function onSubmit(event){
   }, 1000);
 }    
  
-// fungsi untuk menghitung total harga tiket penumpang
+// fungsi untuk menghitung total harga tiket pengunjung
 function hitung() {
   var harga = document.getElementById("harga")
   var total = document.getElementById("total")
@@ -46,7 +46,7 @@ function hitung() {
     opsi_wisata = taman_nasional
   }
   
-  // kondisi ketika ada penumpang lansia
+  // kondisi ketika ada pengunjung anak-anak
   if (pengunjung_anak >= 1) {
     tiket_anak = diskon_anak(pengunjung_anak, opsi_wisata)
   }
@@ -61,9 +61,9 @@ function hitung() {
   harga.innerHTML = formatRupiah(opsi_wisata, 'Rp. ')
 }
 
-// fungsi untuk menghitung potongan harga tiket lansia
+// fungsi untuk menghitung potongan harga tiket anak-anak
 function diskon_anak(jml,tempat){
-  total_harga_anak = jml * tempat //rumus menghitung total harga anatotal_harga_anak
+  total_harga_anak = jml * tempat //rumus menghitung total harga tiket anak
   return tiket_anak = total_harga_anak - (total_harga_anak * (0.5))  //0,1 => 10% 
 }
 
