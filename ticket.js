@@ -38,9 +38,9 @@ function hitung() {
   var tempat = document.querySelector('#tempat').value
 
   // kondisi saat user memilih opsi tempat
-  if (tempat == 'Pantai') {
+  if (tempat == 'pantai') {
     opsi_wisata = pantai
-  } else if (tempat == 'Museum') {
+  } else if (tempat == 'museum') {
     opsi_wisata = museum
   } else {
     opsi_wisata = taman_nasional
