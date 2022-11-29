@@ -26,13 +26,13 @@
                 <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
                     <!-- Current: "bg-violet-900 text-white", Default: "text-violet-300 hover:bg-violet-700 hover:text-white" -->
-                    <a href="index.php" class="bg-violet-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Beranda</a>
+                    <a href="index.php" class="text-violet-300 hover:bg-violet-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Beranda</a>
 
                     <a href="daftar_harga.php" class="text-violet-300 hover:bg-violet-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Daftar Harga</a>
 
                     <a href="pemesanan_tiket.php" class="text-violet-300 hover:bg-violet-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Pesan Tiket</a>
 
-                    <a href="grafik.php" class="text-violet-300 hover:bg-violet-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Grafik</a>
+                    <a href="grafik.php" class="bg-violet-900 text-white px-3 py-2 rounded-md text-sm font-medium">Grafik</a>
                 </div>
                 </div>
             </div>
