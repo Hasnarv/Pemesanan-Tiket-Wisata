@@ -76,7 +76,7 @@ const chart_pantai = new Chart(pantai, {
     data: {
         labels: ['Dewasa', 'Anak-anak'],
         datasets: [{
-            label: '# of Votes',
+            label: 'jumlah: ',
             data: [
                 <?= get_dewasa_pantai() ?>, 
                 <?= get_anak_pantai() ?>
@@ -116,7 +116,7 @@ const chart_museum = new Chart(museum, {
     data: {
         labels: ['Dewasa', 'Anak-anak'],
         datasets: [{
-            label: '# of Votes',
+            label: 'jumlah: ',
             data: [
                 <?= get_dewasa_museum() ?>, 
                 <?= get_anak_museum() ?>
@@ -156,7 +156,7 @@ const chart_taman = new Chart(taman, {
     data: {
         labels: ['Dewasa', 'Anak-anak'],
         datasets: [{
-            label: '# of Votes',
+            label: 'jumlah: ',
             data: [
                 <?= get_dewasa_taman() ?>, 
                 <?= get_anak_taman() ?>

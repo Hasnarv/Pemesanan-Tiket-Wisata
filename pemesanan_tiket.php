@@ -74,9 +74,9 @@
                         <label for="tempat" class="block w-1/3 my-auto text-md font-medium text-gray-700">Tempat Wisata</label>
                         <select id="tempat" name="tempat"
                             class="mt-1 p-2 block w-full rounded-md border border-gray-200 shadow-sm">
-                            <option value="pantai">Pantai</option>
-                            <option value="museum">Museum</option>
-                            <option value="taman nasional">Taman Nasional</option>
+                            <option value="pantai alam indah">Pantai</option>
+                            <option value="museum situs semedo">Museum</option>
+                            <option value="taman nasional pancasila">Taman Nasional</option>
                         </select>
                     </div>
 
